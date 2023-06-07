@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "e34a8684-8088-4648-bd56-69530a24a988",
+		"name": "TensorFlow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19168018"
+	},
+	"item": [
+		{
+			"name": "ImagePredict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/E:/Code/ML/stroke_prediction/Brain_Stroke_CT-SCAN_image/Test/Stroke/80 (18).jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/stroke-image",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stroke-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TextPredict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "gender",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "80",
+							"type": "text"
+						},
+						{
+							"key": "hypertension",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "heart_disease",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ever_married",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "work_type",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "Residence_type",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "avg_glucose_level",
+							"value": "3000",
+							"type": "text"
+						},
+						{
+							"key": "bmi",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "smoking_status",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/stroke-text",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"stroke-text"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

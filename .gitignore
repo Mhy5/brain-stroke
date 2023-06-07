@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+Brain_Stroke_CT-SCAN_image/
+.vscode/
+.vnv/

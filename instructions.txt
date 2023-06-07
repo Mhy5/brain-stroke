@@ -1,0 +1,33 @@
+
+sudo apt install python3-venv
+
+********************************************
+# for windows
+py -3.10 -m venv .venv
+*******************************************
+
+********************************************
+# for linux
+python3 -m venv .venv
+chmod +x ./.vnv/bin/activate
+*******************************************
+
+**********************************************
+source ./.venv/bin/activate
+which python3
+pip install -r requirements_windows.txt
+**********************************************
+
+****************************
+# if error happened
+pip install scikit-learn
+*********************************
+
+flask --app main run  
+
+
+**********************************
+# to stop venv
+
+deactivate
+***********************************
