@@ -64,3 +64,4 @@ wcwidth==0.2.6
 Werkzeug==2.3.4
 wrapt==1.14.1
 gunicorn
+
